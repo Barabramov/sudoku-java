@@ -43,6 +43,7 @@ public class SudokuController {
 		}
 	}
 	
+
 	
 	/*
 	 * recognizes the click action on the clearButton, and clears the numbers from the full squares .
@@ -62,6 +63,7 @@ public class SudokuController {
 		}
 	}
 	
+
 	
 	/*
 	 * recognizes the click action on the setButton, and updates the full squares definition- change style and cancel new changes.
@@ -81,6 +83,7 @@ public class SudokuController {
 	}
 	
 
+	
 	private void textStyle(TextField textField, int row, int col) {
 		if (row < 3 || row > 5) {
 			if (col < 3 || col > 5)
@@ -101,6 +104,8 @@ public class SudokuController {
 		}
 	}
 
+
+	
 	/*
 	 * handle user input, if the input is legal it adds the input to the board, if it's not it delete the input.
 	 */
@@ -118,6 +123,8 @@ public class SudokuController {
 		}
 	}
 
+
+	
 	/*
 	 * check if the user input, stands in the rules of the game.
 	 */
@@ -142,6 +149,8 @@ public class SudokuController {
 		}
 	}
 
+
+	
 	private boolean checkRow(String textField, int row, int col) {
 		for (int i = 0; i < SIZE; i++) {
 			if (i != col && inputText[row][i].getText().equals(textField)) {
@@ -153,6 +162,8 @@ public class SudokuController {
 		return true;
 	}
 
+
+	
 	private boolean checkCol(String textField, int row, int col) {
 		for (int i = 0; i < SIZE; i++) {
 			if (i != row && inputText[i][col].getText().equals(textField)) {
@@ -164,6 +175,8 @@ public class SudokuController {
 		return true;
 	}
 
+
+	
 	private boolean checkCube(String textField, int row, int col) {
 		int startColInd = col - (col % 3);
 		int startRowInd = row - (row % 3);
@@ -180,5 +193,6 @@ public class SudokuController {
 		}
 		return true;
 	}
+
 
 } // end of class
