@@ -86,21 +86,11 @@ public class SudokuController {
 	
 	private void textStyle(TextField textField, int row, int col) {
 		if (row < 3 || row > 5) {
-			if (col < 3 || col > 5)
-				textField.setStyle(
-						"-fx-background-color: silver; -fx-text-fill: black; -fx-font-size: 16; -fx-alignment: center;");
-			else {
-				textField.setStyle(
-						"-fx-background-color: white;-fx-text-fill: black; -fx-font-size: 16; -fx-alignment: center;");
-			}
+			if (col < 3 || col > 5) textField.setStyle("-fx-background-color: silver; -fx-text-fill: black; -fx-font-size: 16; -fx-alignment: center;");
+			else {textField.setStyle("-fx-background-color: white;-fx-text-fill: black; -fx-font-size: 16; -fx-alignment: center;");}
 		} else {
-			if (col > 2 && col < 6)
-				textField.setStyle(
-						"-fx-background-color: silver; -fx-text-fill: black; -fx-font-size: 16;-fx-alignment: center;");
-			else {
-				textField.setStyle(
-						"-fx-background-color: white;-fx-text-fill: black; -fx-font-size: 16; -fx-alignment: center;");
-			}
+			if (col > 2 && col < 6) textField.setStyle("-fx-background-color: silver; -fx-text-fill: black; -fx-font-size: 16;-fx-alignment: center;");
+			else {textField.setStyle("-fx-background-color: white;-fx-text-fill: black; -fx-font-size: 16; -fx-alignment: center;");}
 		}
 	}
 
@@ -132,8 +122,7 @@ public class SudokuController {
 		try {
 			int input = Integer.parseInt(textField);
 			if (input <= 9 && input >= 1) {
-				if (!checkRow(textField, row, col) || !checkCol(textField, row, col) || !checkCube(textField, row, col))
-					return false;
+				if (!checkRow(textField, row, col) || !checkCol(textField, row, col) || !checkCube(textField, row, col)) return false;
 				else {
 					JOptionPane.showConfirmDialog(null, "Legal input", "Legal input", JOptionPane.CLOSED_OPTION);
 					return true;
