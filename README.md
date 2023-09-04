@@ -13,7 +13,7 @@ Graphic sudoku game program, build with scene builder.
 
 ## Illustrative example:
 ##### 1) Place numbers on the blank board.
-![fill empty board](https://github.com/Barabramov/sudoku-java/assets/93996218/f5fde4b8-52a4-49b7-86de-5c6eccfe658c) ![fill empty board2](https://github.com/Barabramov/sudoku-java/assets/93996218/b3cffba6-55f3-4acc-b87f-54929d3750f6) ![fill empty board3](https://github.com/Barabramov/sudoku-java/assets/93996218/6bce367c-2d3d-4dfd-9a3b-87becff551f1)
+![fill empty board2](https://github.com/Barabramov/sudoku-java/assets/93996218/b3cffba6-55f3-4acc-b87f-54929d3750f6) &nbsp; ![fill empty board3](https://github.com/Barabramov/sudoku-java/assets/93996218/6bce367c-2d3d-4dfd-9a3b-87becff551f1)
 
 
 ##### 2) Setting the board - clicking the set button.
