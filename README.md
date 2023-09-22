@@ -1,19 +1,37 @@
-# sudoku-java
-Graphic sudoku game program, build with scene builder.
+# Sudoku-Java
+A graphical Sudoku game developed using Java and Scene Builder.
 
-## game progress:
+## Overview
 
-- In the first stage (the board preparation stage) the application will show the user an empty initial board and the user will be able to insert digits in the empty slots according to the sudoku board he wants to solve. Entering a number and pressing enter in any cell will cause the program to check the correctness of the number (that is, that the number is correct and that he does not contradict the rules of the game so far). If the number is incorrect, a corresponding message will be displayed and the number will be deleted.
-  
-- At the end of the board preparation stage, the user will press the set button and then the user will not be able to change any more the set of numbers determined as part of preparing the board. The text color will be changed so that the user will see a difference between the fixed numbers and the numbers he will enter later.
+The game has two main phases:
+1. **Board Preparation**: Users fill in the initial Sudoku board they intend to solve.
+2. **Solution Phase**: Players solve the board by filling in numbers following Sudoku rules.
 
-- Now the user starts the solution phase. At this stage the user enters numbers in the empty cells and presses enter after entering each number. Pressing enter in any cell causes the program to check the correctness of the entered number. If the number is incorrect, a corresponding message will be displayed and the number will be deleted. The user can change the numbers they entered at this stage, but cannot change numbers that were entered during the board preparation phase.
-  
-- Pressing the clear button will clear the entire board and the user will be able to prepare new board. <br /><br />
+## Gameplay Details
 
-### Illustrative example:
-##### After adding values ​​in the empty board and defining the board with the set button, the game is ready. The values ​​defined on the board are colored red and cannot be changed, and the rest of the slots must be filled in according to the rules of the game.
-![play](https://github.com/Barabramov/sudoku-java/assets/93996218/be3eb85a-8e9b-4a4d-bb74-2235d045e339) &nbsp;&nbsp;&nbsp; ![play2](https://github.com/Barabramov/sudoku-java/assets/93996218/fb03322c-2ab9-405a-8f1c-bb9618c617eb)
+### 1. Board Preparation:
 
+- Upon launching, the app presents an empty initial board.
+- Users can fill in numbers to set up the Sudoku challenge they wish to tackle.
+- After entering a digit in a cell and pressing `Enter`, the program verifies the number's validity based on Sudoku's rules.
+    - If the entered number is invalid, an error message will pop up, and the input will be cleared.
+- Once users finish setting up the board, they can finalize it by clicking the `Set` button.
+    - Post this step, the initial numbers become immutable, and their text color changes to signify their permanence.
 
+### 2. Solution Phase:
 
+- Users can now solve the Sudoku puzzle by filling numbers in the empty cells.
+- After inputting a number, pressing `Enter` will validate the number's correctness.
+    - Incorrect numbers will trigger an error message and be automatically deleted.
+- Players can modify numbers they input during this phase but can't alter the numbers set during the board preparation phase.
+
+### 3. Resetting the Board:
+
+- If users wish to start over, they can reset the board by clicking the `Clear` button, reverting it to its initial empty state.
+
+## Visual Example:
+Below are visual demonstrations of the game in action:
+- On the left, you can see a board set with some initial numbers (colored red), which cannot be modified.
+- On the right is the gameplay where players can fill in the remaining slots as per Sudoku rules.
+
+![Game Setup](https://github.com/Barabramov/sudoku-java/assets/93996218/be3eb85a-8e9b-4a4d-bb74-2235d045e339) &nbsp;&nbsp;&nbsp; ![Gameplay](https://github.com/Barabramov/sudoku-java/assets/93996218/fb03322c-2ab9-405a-8f1c-bb9618c617eb)
